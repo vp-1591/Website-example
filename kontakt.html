@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+   <div class="container my-5">
+        <div class="mb-3">
+            <label class="form-label" for="email-1">E-mail</label>
+            <input type="email" class="form-control" id="email-1" placeholder="test@test.pl" aria-describedby="email-1-text">
+            <div class="form-text" id="email-1-text">
+                Podaj swój adres e-mail.
+            </div>
+        </div>
+
+        <hr>
+
+        <form action="" method="GET">
+            <div class="mb-3">
+                <label class="form-label" for="name-2">
+                    Imię
+                </label>
+                <input type="text" class="form-control" id="name-2" placeholder="Jan" name="name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="surname-2">
+                    Nazwisko
+                </label>
+                <input type="text" class="form-control" id="surname-2" placeholder="Kowalski" name="surname">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Wyślij</button>
+                <button type="reset" class="btn btn-secondary btn-sm">Wyczyść</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <div class="mb-3">
+            <label class="form-label" for="name-3">
+                Imię
+            </label>
+            <input type="text" class="form-control" id="name-3" placeholder="Jan" name="name">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="comment-3">
+                Treść wpisu
+            </label>
+            <textarea class="form-control" id="comment-3" name="comment"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="state-3">
+                Województwo
+            </label>
+            <select class="form-select" aria-label="Wybierz województwo" name="state" id="state-3">
+                <option value="mazowieckie">Mazowieckie</option>
+                <option value="dolnośląskie">Dolnośląskie</option>
+                <option value="lubuskie">Lubuskie</option>
+                <option value="...">...</option>
+            </select>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" value="" id="consent-3">
+
+            <label class="form-check-label" for="consent-3">
+                Wyrażam zgodę...
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radio-3" id="radio-3-1">
+
+            <label class="form-check-label" for="radio-3-1">
+                Opcja A
+            </label>
+        </div>
+
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="radio-3" id="radio-3-2">
+
+            <label class="form-check-label" for="radio-3-2">
+                Opcja B
+            </label>
+        </div>
+
+        <hr>
+
+        <form action="" method="GET">
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label" for="email-4">E-mail</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" id="email-4">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label" for="password-4">Hasło</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" id="password-4">
+                </div>
+            </div>
+            
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="remember" id="remember-4" value="1">
+                        <label class="form-check-label" for="remember-4">Zapamiętaj mnie przez tydzień</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Zaloguj się</button>
+        </form>
+
+        <hr>
+
+        <form action="" method="GET">
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="name-5" class="form-label">Imię</label>
+                    <input type="text" name="name" id="name-5" class="form-control">
+                </div>
+                <div class="col-md-6">
+                    <label for="surname-5" class="form-label">Nazwisko</label>
+                    <input type="text" name="surname" id="surname-5" class="form-control">
+                </div>
+
+                <div class="col-12">
+                    <label for="address-5" class="form-label">Adres</label>
+                    <input type="text" name="address" id="address-5" class="form-control" placeholder="Aleje Jerozolimskie 123 m. 4">
+                </div>
+
+                <div class="col-12">
+                    <label for="address2-5" class="form-label">Adres 2</label>
+                    <input type="text" name="address2" id="address2-5" class="form-control" placeholder="Trzecie piętro, budynek C">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="city-5" class="form-label">Miasto</label>
+                    <input type="text" name="city" id="city-5" class="form-control">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="state-5" class="form-label">Województwo</label>
+                    <select class="form-select" aria-label="Wybierz województwo" name="state" id="state-5">
+                        <option value="mazowieckie">Mazowieckie</option>
+                        <option value="dolnośląskie">Dolnośląskie</option>
+                        <option value="lubuskie">Lubuskie</option>
+                        <option value="...">...</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <label for="zipcode-5" class="form-label">Kod pocztowy</label>
+                    <input type="text" name="zipcode" id="zipcode-5" class="form-control" placeholder="12-345">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Zamów</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
+
+index.html
+
+<div class="container my-5">
+    <div id="kontakt">
+        <h2 class="display-6 theme-text-secondary text-uppercase mb-5 text-center">Kontakt</h2>
+        
+        <form action="mailto:jan.kowalski@adava.com" method="GET" enctype="text/plain">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-3">
+                    <div class="mb-3">
+                        <label class="form-label" for="subject">Temat wiadomości</label>
+                        <input class="form-control" type="text" name="subject" id="subject" placeholder="Wyjazd na Jowisza...">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="subject">Treść wiadomości</label>
+                        <textarea class="form-control" name="body" id="body"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <div class="card w-100 text-center">
+                        <h5 class="card-header theme-bg-secondary theme-text-light">Gwarancja odpowiedzi</h5>
+                        <div class="card-body theme-bg-lightyellow">
+                            Zazwyczaj odpowiadamy na wiadomości w
+                            przciągu dnia roboczego.
+                        </div>
+
+                        <div class="card-body theme-bg-light">
+                            <button class="btn btn-outline-success">Wyślij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
